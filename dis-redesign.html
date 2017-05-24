@@ -1,5 +1,6 @@
 
 
+
 <!doctype html>  
     
     <head>
@@ -26,9 +27,11 @@
     <!-- Custom CSS -->
     <link rel="stylesheet" id="image-lazy-load-frontend-css" href="css/frontend.css" type="text/css" media="all">
     <link href="css/style.css" rel="stylesheet">
-    <link href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+    <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
     <!-- Fonts -->
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,300' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600,300' rel='stylesheet' type='text/css'>
 
 
     </head>
@@ -53,7 +56,7 @@
 
                     <div class="collapse navbar-collapse navbar-responsive-collapse">
                         <ul id="menu-main" class="nav navbar-nav">
-                        <li id="menu-item-441" class="active"><a href="index.html#work">Work</a></li>
+                        <li id="menu-item-441" class="active"><a href="index.html#work">Projects</a></li>
                         <li id="menu-item-415"><a href="personal.html">Personal</a></li>
                         <li id="menu-item-416"><a href="about.html">About</a></li>
                         <li id="menu-item-66"><a href="contact.html">Contact</a></li>
@@ -69,6 +72,31 @@
         <div class="container">
             
 
+           <div id="content" class="clearfix row">
+            
+                <div id="main" class="row-fluid clearfix" role="main">
+
+                <section class="post_content clearfix" itemprop="articleBody">
+                <h1 class="single-title" itemprop="headline">DIS Website Redesign</h1>
+                <div class="col-md-8 col-md-offset-2">
+
+
+                <div class="carousel">
+                    <div><img data-lazy="img/dis_0.png" class="slide"></div>
+                    <div><img data-lazy="img/dis_2.jpg" class="slide"></div>
+                    <div><img data-lazy="img/dis_3.png" class="slide"></div>
+                    <div><img data-lazy="img/dis_4.jpg" class="slide"></div>
+                    <div><img data-lazy="img/dis_5.gif" class="slide"></div>
+                </div>
+            </div>
+
+            <div class="carousel-desc col-md-10 col-md-offset-1">
+            <br>
+                <p>Our class was assigned to design or redesign an object for our studio space’s use. I joined up with my partner, Sarah Schattscneider, because we both have a strong interest in coding and online interfaces and applications, something not as explored in our program. While other classmates went for the tangible, such as podiums and storage units, my partner and I took up the task to design a user interface and information organization update to the currently used website representing the Design, Innovation, and Society program. We wanted to implement our version of the website for the school, but were restricted due to the content management system imposed by the IT department that was beyond our control. Our work did, however, set in motion the possibility of a standalone website for our growing program and is used as reference for advertising and describing the program to new applicants.
+                </p>
+
+
+                </div>
 
 
 
@@ -76,7 +104,7 @@
             <footer role="contentinfo">
             
         <div id="inner-footer" class="clearfix">
-                    <p id="footer">Copyright &copy; 2014</p>
+                    <p id="footer">Copyright &copy; 2017</p>
         </div> <!-- end #inner-footer -->
                 
             </footer> <!-- end footer -->
@@ -89,29 +117,26 @@
         <![endif]-->
         
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
-    <script src="js/normalize.js"></script>
+    <script src="slick/slick.min.js"></script>
     <script type="text/javascript">
  
 
        $(document).ready(function(){            
-            $(function(){
-            
-            $('.carousel').carousel({
-                interval:5000
-            })
-            $('.carousel').carousel('next');
+            $('.carousel').slick({
+                dots: true,
+                lazyLoad:'ondemand',
+
+            });
 
             var $root = $('html, body');
 
             //Fade between pages
             $('body').css('display', 'none');
             $('body').fadeIn(500);
-
         });
-    });
     </script> 
 </body>
 </html>
