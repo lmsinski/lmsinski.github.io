@@ -91,7 +91,7 @@
             <footer role="contentinfo">
             
         <div id="inner-footer" class="clearfix">
-                    <p id="footer">Copyright &copy; 2014</p>
+                    <p id="footer">Copyright &copy; 2017</p>
         </div> <!-- end #inner-footer -->
                 
             </footer> <!-- end footer -->
@@ -112,21 +112,17 @@
  
 
        $(document).ready(function(){            
-            $(function(){
-            
-            $('.carousel').carousel({
-                interval:5000
-            })
-            $('.carousel').carousel('next');
+            $('.carousel').slick({
+                dots: true,
+                lazyLoad:'ondemand',
+            });
 
             var $root = $('html, body');
 
             //Fade between pages
             $('body').css('display', 'none');
             $('body').fadeIn(500);
-
         });
-    });
     </script> 
 </body>
 </html>
