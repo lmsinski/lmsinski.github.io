@@ -6,7 +6,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title>DIS Website Redesign</title> 
+        <title>Thesis: IncogInput</title> 
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
         <link rel="icon" type="image/ico" href="img/favicon.ico">
@@ -72,32 +72,38 @@
         <div class="container">
             
 
-           <div id="content" class="clearfix row">
+            <div id="content" class="clearfix row">
             
                 <div id="main" class="row-fluid clearfix" role="main">
 
                 <section class="post_content clearfix" itemprop="articleBody">
-                <h1 class="single-title" itemprop="headline">DIS Website Redesign</h1>
+                <h1 class="single-title" itemprop="headline">Thesis: IncogInput</h1>
                 <div class="col-md-8 col-md-offset-2">
 
 
                 <div class="carousel">
-                    <div><img data-lazy="img/dis_0.png" class="slide"></div>
-                    <div><img data-lazy="img/dis_2.JPG" class="slide"></div>
-                    <div><img data-lazy="img/dis_3.png" class="slide"></div>
-                    <div><img data-lazy="img/dis_4.jpg" class="slide"></div>
-                    <div><img data-lazy="img/dis_5.gif" class="slide"></div>
+                    <div><img data-lazy="img/incoginput1.png" class="slide"></div>
+                    <div><img data-lazy="img/incoginput2.png" class="slide"></div>
+                    <div><img data-lazy="img/incoginput3.png" class="slide"></div>
+                    <div><img data-lazy="img/incoginput4.png" class="slide"></div>
+                    <div><img data-lazy="img/incoginput5.png" class="slide"></div>
+
                 </div>
             </div>
-
             <div class="carousel-desc col-md-10 col-md-offset-1">
             <br>
-                <p>Our class was assigned to design or redesign an object for our studio space’s use. I joined up with my partner, Sarah Schattscneider, because we both have a strong interest in coding and online interfaces and applications, something not as explored in our program. While other classmates went for the tangible, such as podiums and storage units, my partner and I took up the task to design a user interface and information organization update to the currently used website representing the Design, Innovation, and Society program. We wanted to implement our version of the website for the school, but were restricted due to the content management system imposed by the IT department that was beyond our control. Our work did, however, set in motion the possibility of a standalone website for our growing program and is used as reference for advertising and describing the program to new applicants.
+                <p>
+                My thesis project brought together both my partners' and my interest of organizational design and business management and practices as an application of critical design. We started with heavy research into scholarly literature and found that we gravitated towards the topics of collaboration and the affects of hierarchy in organiations. Different types of businesses and organizations will each work with tailored hieracrchies, whether they are leaning more vertically or horizontally. We proposed that we could conceptualize an application that would track how hierarchical rank would affect how people in an organization talked to each other.
+                <br><br>
+                From this, we created incoginput, an application made for collaboration. It functions similarly to an anonymous message board, with each project serving as the topic for discussion. The idea would be that each user could express their feedback and ideas without feeling stress from higher management, and employees of all ranks could ask clarification questions without fear of judgement. This would also combat personal biases between workers. As a user, you would only be able to see your own profile with designated "rank" in a company--everyone else is unknown to you.
+                <br><br>
+                The application system itself would also track who commented on who, and, using <a href="http://circos.ca/">Circos</a>, would output circular diagrams to show the connections between employees. You can see if upper management makes the most number of comments, or if the middle level of the company is not providing enough feedback, all while being anonymous. Seeing the connections and feedback roads provides data that would allow the company to assess their communications and tailor the fit to what is best for them.
                 </p>
                 <br>
                 <a href="index.html#work">« Back</a>
 
                 </div>
+
 
 
 
@@ -124,12 +130,10 @@
     <script src="slick/slick.min.js"></script>
     <script type="text/javascript">
  
-
        $(document).ready(function(){            
             $('.carousel').slick({
                 dots: true,
                 lazyLoad:'ondemand',
-
             });
 
             var $root = $('html, body');

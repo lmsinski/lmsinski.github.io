@@ -40,39 +40,7 @@
 	<script type="text/javascript" src="js/modernizr.full.min.js"></script>
 
 
-		<script type="text/javascript">
-			$(document).ready(function(){
 
-
-			$(function(){
-
-			var $root = $('html, body');
-
-			$('a').click(function() {
-			    var href = $.attr(this, 'href');
-			    $root.animate({
-			        scrollTop: $(href).offset().top-102
-			    }, 600, 'easeInOutQuint', function () {
-			        window.location.hash = href;
-			    });
-			    return false;
-			});
-			})
-
-			var divs = $('.intro');
-			$(window).on('scroll', function() {
-			var st = $(this).scrollTop();
-			divs.css({ 'opacity' : (1 - st/$( window ).height()) });
-			});
-
-			//Fade between pages
-			$('body').css('display', 'none');
-
-			$('body').fadeIn(500);
-
-			});
-
-		</script>
 	</head>
 	
 	<body class="page">
@@ -95,7 +63,7 @@
 
                     <div class="collapse navbar-collapse navbar-responsive-collapse">
                         <ul id="menu-main" class="nav navbar-nav">
-                        <li id="menu-item-441"><a href="index.html#work">Work</a></li>
+                        <li id="menu-item-441"><a href="index.html#work">Projects</a></li>
                         <li id="menu-item-415"><a href="personal.html">Personal</a></li>
                         <li id="menu-item-416" class="active"><a href="about.html">About</a></li>
                         <li id="menu-item-66"><a href="contact.html">Contact</a></li>
@@ -154,7 +122,20 @@ Art and design, Ultimate Frisbee, Running, Photography, Travel, Video Games
   			<script>window.attachEvent('onload',function(){CFInstall.check({mode:'overlay'})})</script>
 		<![endif]-->
 		
+	<script type="text/javascript">
+		$(document).ready(function(){
 
+		var $root = $('html, body');
+
+		//Fade between pages
+		$('body').css('display', 'none');
+
+		$('body').fadeIn(500);
+
+		});
+
+	</script>
+		
 	</body>
 
 </html>
